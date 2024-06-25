@@ -1,0 +1,10215 @@
+{
+	"info": {
+		"_postman_id": "36637c1c-6dd6-4641-a69d-da38401fedcd",
+		"name": "runlapan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26558441"
+	},
+	"item": [
+		{
+			"name": "ABOUT ME",
+			"item": [
+				{
+					"name": "GET ALL ABOUT ME",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/aboutme?page=&limit=&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aboutme"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": ""
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE ABOUT ME",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "content",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/aboutme",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aboutme"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE ABOUT ME",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/aboutme/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aboutme",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE APP INFO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/appinfo/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"appinfo",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "APPLICATION INFO",
+			"item": [
+				{
+					"name": "GET ALL APP INFO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/appinfo?page=&limit=&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"appinfo"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": ""
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE APP INFO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "RUNLAPAN",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Parking | Security | IT Solution",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "08123456789",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "testing@runlapan.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Cimanggis, Depok",
+									"type": "text"
+								},
+								{
+									"key": "logo",
+									"type": "file",
+									"src": "/C:/Users/itmam/Downloads/logo.png"
+								},
+								{
+									"key": "logo_width",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "logo_height",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "icon",
+									"type": "file",
+									"src": "/C:/Users/itmam/Downloads/favicon_io/favicon.ico"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/appinfo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"appinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE APP INFO",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "RUN8",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "IT DEVELOPMENT | OUTSOURCING | PARKING",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0812345678",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "galaxyorion93@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Cimanggis",
+									"type": "text"
+								},
+								{
+									"key": "logo",
+									"type": "file",
+									"src": "/C:/Users/itmam/OneDrive/Gambar/Screenshot/Easy - Sleep.png"
+								},
+								{
+									"key": "logo_width",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "logo_height",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "icon",
+									"type": "file",
+									"src": "/C:/Users/itmam/Downloads/favicon_io (5)/favicon.ico"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/appinfo/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"appinfo",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE APP INFO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/appinfo/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"appinfo",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ARTICLE",
+			"item": [
+				{
+					"name": "GET ALL ARTICLE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/article",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"article"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "id",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "ASC",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "hp-android-dan-ios",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE ARTICLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Music/67787550_786fb63f-2a6b-4f2b-8271-168a2ad086ac.jpg"
+								},
+								{
+									"key": "title",
+									"value": "Cat",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "source",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/article",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"article"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE ARTICLE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Music/67787550_786fb63f-2a6b-4f2b-8271-168a2ad086ac.jpg"
+								},
+								{
+									"key": "title",
+									"value": "Cat",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "source",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/article/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"article",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ARTICLE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/article/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"article",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/article/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"article",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "LOGIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/auth/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REGISTER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "role_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "permissions_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/auth/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FORGOT PASSWORD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/auth/forgot-password",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RESET PASSWORD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "667490",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/auth/reset-password",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BUSINESS TYPE",
+			"item": [
+				{
+					"name": "GET ALL BUSINESS TYPE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/business-type?page=&limit=&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"business-type"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": ""
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE BUSINESS TYPE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Food & Beverage",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/business-type",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"business-type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE BUSINESS TYPE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/business-type/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"business-type",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE BUSINESS TYPE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/business-type/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"business-type",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/business-type/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"business-type",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CAREERS",
+			"item": [
+				{
+					"name": "GET ALL CAREERS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/career?page=&limit=&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"career"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": ""
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE CAREERS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "logo",
+									"type": "file",
+									"src": "/C:/Users/itmam/Downloads/logo.png"
+								},
+								{
+									"key": "company_name",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "field_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "position_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "experience_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "education_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "male_employee_total",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "female_employee_total",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "employee_status",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "min_age",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "max_age",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "min_height",
+									"value": "120",
+									"type": "text"
+								},
+								{
+									"key": "max_height",
+									"value": "120",
+									"type": "text"
+								},
+								{
+									"key": "marital_status_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "vehicle_type_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "driver_license_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "job_open",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "job_closed",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "job_description",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "min_salary",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "max_salary",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "salary_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "company_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/career",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"career"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE CAREERS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "logo",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "field_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "position_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "experience_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "education_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "male_employee_total",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "female_employee_total",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "employee_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "min_age",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "max_age",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "min_height",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "max_height",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "marital_status_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "vehicle_type_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "driver_license_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "job_open",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "job_closed",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "job_description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "min_salary",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "max_salary",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "salary_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/career/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"career",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CAREER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/career/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"career",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/career/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"career",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CATEGORY",
+			"item": [
+				{
+					"name": "GET ALL CATEGORY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "null",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "id",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "ASC",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE CATEGORY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Politik",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE CATEGORY",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/categories/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CATEGORY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/category/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CLIENTS",
+			"item": [
+				{
+					"name": "GET ALL CLIENTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/client?page=1&limit=100&search=null&sort=id&sortBy=ASC",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"client"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "search",
+									"value": "null"
+								},
+								{
+									"key": "sort",
+									"value": "id"
+								},
+								{
+									"key": "sortBy",
+									"value": "ASC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE CLIENTS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Downloads/logo.png"
+								},
+								{
+									"key": "company_name",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "brand_name",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "business_type",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "company_email",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "121212121212",
+									"type": "text"
+								},
+								{
+									"key": "pic_name",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "pic_position",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "pic_email",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "pic_phone",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "tes",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "tes",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/client",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE CLIENTS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "brand_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "business_type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_position",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/client/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"client",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CLIENTS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/client/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"client",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/client/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"client",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "COLOR",
+			"item": [
+				{
+					"name": "GET ALL COLOR",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/color",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"color"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE COLOR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "primary",
+									"value": "#152769",
+									"type": "text"
+								},
+								{
+									"key": "secondary",
+									"value": "#FFFFFF",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/color",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"color"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE COLOR",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "primary",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "secondary",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/color/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"color",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE COLOR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/color/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"color",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CONTACT NAME",
+			"item": [
+				{
+					"name": "GET ALL CONTACT NAME",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/contact-name",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"contact-name"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE CONTACT NAME",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "#3BC0C3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "#FFF",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/contact-name",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"contact-name"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE CONTACT NAME",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "#3BC0C3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "#FFF",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/contact-name",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"contact-name"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CONTACT NAME",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/contact-name/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"contact-name",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "COMPANY PRODUCT APPLICATIONS",
+			"item": [
+				{
+					"name": "GET ALL PRODUCT APPLICATION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/company-product-application",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-product-application"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE PRODUCT APPLICATION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_logo",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "brand_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_position",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/company-product-application",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-product-application"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PRODUCT APPLICATION",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company_logo",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "brand_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_position",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/company-product-application/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-product-application",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PRODUCT APPLICATION",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/company-product-service/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-product-service",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "COMPANY PRODUCT SERVICE",
+			"item": [
+				{
+					"name": "GET ALL PRODUCT SERVICE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/company-product-service",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-product-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE PRODUCT SERVICE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_logo",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "brand_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_position",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/company-product-service",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-product-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PRODUCT SERVICE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_logo",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "brand_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_position",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/company-product-service/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-product-service",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PRODUCT SERVICE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/company-product-service/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-product-service",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CONTACTS",
+			"item": [
+				{
+					"name": "GET ALL CONTACTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/contacts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE CONTACTS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Whatsapp",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "08123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/contacts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE CONTACTS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Web Whatsapp",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "08123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/contacts/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"contacts",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CONTACTS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/contacts/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"contacts",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DEPARTEMENTS",
+			"item": [
+				{
+					"name": "GET ALL DEPARTEMENT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/departement",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"departement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE DEPARTEMENT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Finance",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/departement",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"departement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DEPARTEMENT",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/departement/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"departement",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DEPARTEMENT",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/departement/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"departement",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DRIVER LICENSE",
+			"item": [
+				{
+					"name": "GET ALL DRIVER LICENSE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/driver-license",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"driver-license"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE DRIVER LICENSE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "SIM D",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/driver-license",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"driver-license"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DRIVER LICENSE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/driver-license/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"driver-license",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DRIVER LICENSE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/driver-license/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"driver-license",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EDUCATION",
+			"item": [
+				{
+					"name": "GET ALL EDUCATION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/education",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE EDUCATION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "S2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/education",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EDUCATION",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/education/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"education",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE COLOR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/education/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"education",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMAIL",
+			"item": [
+				{
+					"name": "GET ALL EMAIL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/email",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE EMAIL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email_behalf",
+									"value": "testing@runlapan.com",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "testing@runlapan.com",
+									"type": "text"
+								},
+								{
+									"key": "protocol",
+									"value": "SMTP",
+									"type": "text"
+								},
+								{
+									"key": "smtp_host",
+									"value": "mail.runlapan.com",
+									"type": "text"
+								},
+								{
+									"key": "smtp_user",
+									"value": "testing@runlapan.com",
+									"type": "text"
+								},
+								{
+									"key": "smtp_pass",
+									"value": "u9*D28eKjDGr",
+									"type": "text"
+								},
+								{
+									"key": "smtp_port",
+									"value": "465",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/email",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EMAIL",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email_behalf",
+									"value": "testing@runlapan.com",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "testing@runlapan.com",
+									"type": "text"
+								},
+								{
+									"key": "protocol",
+									"value": "SMTP",
+									"type": "text"
+								},
+								{
+									"key": "smtp_host",
+									"value": "mail.runlapan.com",
+									"type": "text"
+								},
+								{
+									"key": "smtp_user",
+									"value": "testing@runlapan.com",
+									"type": "text"
+								},
+								{
+									"key": "smtp_pass",
+									"value": "u9*D28eKjDGr",
+									"type": "text"
+								},
+								{
+									"key": "smtp_port",
+									"value": "465",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/email/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"email",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE EMAIL",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMPLOYEE STATUS",
+			"item": [
+				{
+					"name": "GET ALL EMPLOYEE STATUS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/employee-status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employee-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE EMPLOYEE STATUS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Karyawan Tetap",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/employee-status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employee-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EMPLOYEE STATUS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/employee-status/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employee-status",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE EMPLOYEE STATUS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/employee-status/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"employee-status",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EVENT",
+			"item": [
+				{
+					"name": "GET ALL EVENT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/events?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE EVENT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "place",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/events",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EVENTS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "place",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/events/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE EVENT",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/events/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/events/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FAQ",
+			"item": [
+				{
+					"name": "GET ALL FAQ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/faq",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"faq"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE FAQ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Metode pembayaran apa yang Anda terima?\n",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Kami menerima berbagai metode pembayaran, termasuk kartu kredit/debit, pembayaran online, dan sistem penagihan. Metode pembayaran dapat bervariasi tergantung pada jenis layanan.\n\n\n",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/faq",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"faq"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE FAQ",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/faq/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"faq",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE FAQ",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/faq/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"faq",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FEEDBACK",
+			"item": [
+				{
+					"name": "GET ALL FEEDBACK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/feedback?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"feedback"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE FEEDBACK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "gender_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/feedback",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"feedback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE FEEDBACK",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "gender_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/feedback/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"feedback",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE FEEDBACK",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/feedback/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"feedback",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/feedback/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"feedback",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FIELD OF WORK",
+			"item": [
+				{
+					"name": "GET ALL FIELD OF WORK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/fieldofwork?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"fieldofwork"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE FIELD OF WORK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Bidang Seni & Sastra",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/fieldofwork",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"fieldofwork"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE FEEDBACK",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/fieldofwork/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"fieldofwork",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE FEEDBACK",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/fieldofwork/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"fieldofwork",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/fieldofwork/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"fieldofwork",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GALLERY",
+			"item": [
+				{
+					"name": "GET ALL GALLERY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/gallery?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"gallery"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE GALLERY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Music/67787550_786fb63f-2a6b-4f2b-8271-168a2ad086ac.jpg"
+								},
+								{
+									"key": "title",
+									"value": "Gallery",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Gallery",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/gallery",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"gallery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE GALLERY",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Music/67787550_786fb63f-2a6b-4f2b-8271-168a2ad086ac.jpg"
+								},
+								{
+									"key": "title",
+									"value": "Gallery",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Gallery",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/gallery/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"gallery",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE GALLERY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/gallery/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"gallery",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/services/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GENDER",
+			"item": [
+				{
+					"name": "GET ALL GENDER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/gender?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"gender"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE GENDER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Perempuan",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/gender",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"gender"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE GENDER",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/gender/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"gender",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE GENDER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/gallery/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"gallery",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/services/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "INDIVIDUAL PARTNER",
+			"item": [
+				{
+					"name": "GET ALL INDIVIDUAL PARTNER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/individual-partner?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individual-partner"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE INDIVIDUAL PARTNER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo_profile",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "partner_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nik",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "first_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "second_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "line",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/individualpartner",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualpartner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE INDIVIDUAL PARTNER",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo_profile",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "partner_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nik",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "first_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "second_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "line",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/individualpartner",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualpartner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE INDIVIDUAL PARTNER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/individualpartner/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualpartner",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/services/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "INDIVIDUAL PRODUCT APPLICATION",
+			"item": [
+				{
+					"name": "GET ALL INDIVIDUAL PRODUCT APPLICATION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/individual-product-application?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individual-product-application"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE INDIVIDUAL PRODUCT APPLICATION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile_picture",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "individual_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nik",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "first_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "second_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "line",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/individualproductapplication",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualproductapplication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE INDIVIDUAL PRODUCT APPLICATION Copy",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile_picture",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "individual_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nik",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "first_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "second_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "line",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/individualproductapplication",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualproductapplication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE INDIVIDUAL PRODUCT APPLICATION",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/individualproductapplication/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualproductapplication",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/individualproductapplication/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualproductapplication",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "INDIVIDUAL PRODUCT SERVICE",
+			"item": [
+				{
+					"name": "GET ALL INDIVIDUAL PRODUCT SERVICE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/individual-product-service?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individual-product-service"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE INDIVIDUAL PRODUCT SERVICE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile_picture",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "individual_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nik",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "first_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "second_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "line",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/individualproductservice",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualproductservice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE INDIVIDUAL PRODUCT SERVICE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile_picture",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "individual_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nik",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "first_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "second_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "line",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/individualproductservice/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualproductservice",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE INDIVIDUAL PRODUCT SERVICE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/individualproductservice/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualproductservice",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/individualproductservice/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"individualproductservice",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MAPS",
+			"item": [
+				{
+					"name": "GET ALL MAPS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/maps?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"maps"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE MAPS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "url",
+									"value": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1767.5008798691633!2d106.8778157451984!3d-6.384003178837754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb0e41239503%3A0x34706d2e323d6163!2sPT%20RADAR%20UTAMA%20NUSANTARA%20LAPAN!5e0!3m2!1sid!2sid!4v1695019682708!5m2!1sid!2sid",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/maps",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"maps"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE MAPS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "url",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/maps/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"maps",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE MAPS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/maps/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"maps",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MARITAL STATUS",
+			"item": [
+				{
+					"name": "GET ALL MARITAL STATUS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/maritalstatus?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"maritalstatus"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE MARITAL STATUS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Belum Menikah",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/maritalstatus",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"maritalstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE MARITAL STATUS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "url",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/marital-status/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"marital-status",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE MARITAL STATUS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/maps/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"maps",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NEEDED POSITION",
+			"item": [
+				{
+					"name": "GET ALL NEEDED POSITION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/needed-position?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"needed-position"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE NEEDED POSITION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Web Backend",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/needed-position",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"needed-position"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE NEEDED POSITION",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "url",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/needed-position/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"needed-position",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE NEEDED POSITION",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/needed-position/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"needed-position",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NOTIFICATION",
+			"item": [
+				{
+					"name": "GET ALL NOTIFICATION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/notification?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notification"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE NOTIFICATION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Message",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "Tes",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/notification",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE NOTIFICATION",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "url",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/notification/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notification",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE NOTIFICATION",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/notification/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"notification",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MENU",
+			"item": [
+				{
+					"name": "GET ALL MENU",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/menu?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE MENU",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "menu",
+									"value": "Home",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "http://localhost:3000/",
+									"type": "text"
+								},
+								{
+									"key": "target",
+									"value": "blank",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/menu",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE MENU",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "menu",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "target",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/menu/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE MENU",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/menu/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/menu/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"menu",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PAGES",
+			"item": [
+				{
+					"name": "GET ALL PAGES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/pages",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE PAGES",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/pages",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PAGES",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/pages/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pages",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PAGES",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/pages/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pages",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/pages/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"pages",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "COMPANY PARTNER",
+			"item": [
+				{
+					"name": "GET ALL COMPANY PARTNER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/company-partner",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-partner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE COMPANY PARTNER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Downloads/logo.png"
+								},
+								{
+									"key": "company_name",
+									"value": "runlapan",
+									"type": "text"
+								},
+								{
+									"key": "brand_name",
+									"value": "runlapan",
+									"type": "text"
+								},
+								{
+									"key": "business_type",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "company_email",
+									"value": "runlapan@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "08123456789",
+									"type": "text"
+								},
+								{
+									"key": "pic_name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "pic_position",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "pic_email",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "pic_phone",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/company-partner",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-partner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE COMPANY PARTNER",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "brand_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "business_type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_position",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pic_phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/company-partner",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-partner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE COMPANY PARTNER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/company-partner/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"company-partner",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/partner/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"partner",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PORTFOLIO",
+			"item": [
+				{
+					"name": "GET ALL PORTFOLIO",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{url}}/portfolio",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"portfolio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE PORTFOLIO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Downloads/pexels-cottonbro-studio-4067757.jpg"
+								},
+								{
+									"key": "title",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Portfolio",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is a portfolio",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/portfolio",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"portfolio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PORTFOLIO",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/portfolio/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"portfolio",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PORTFOLIO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/portfolio/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"portfolio",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/portfolio/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"portfolio",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POSITION OF WORK",
+			"item": [
+				{
+					"name": "GET ALL POSITION OF WORK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/position-of-work",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"position-of-work"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE POSITION OF WORK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Technician",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/position-of-work",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"position-of-work"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE POSITION OF WORK",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/position-of-work/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"position-of-work",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE POSITION OF WORK",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/position-of-work/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"position-of-work",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RELIGION",
+			"item": [
+				{
+					"name": "GET ALL RELIGION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/religion",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"religion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE RELIGION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Kong Hu Chu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/religion",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"religion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE RELIGION",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/religion/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"religion",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE RELIGION",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/religion/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"religion",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ROLE",
+			"item": [
+				{
+					"name": "GET ALL ROLE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/role",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE ROLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Normal User",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/role",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE ROLE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/role/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"role",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ROLE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/role/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"role",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SALARY",
+			"item": [
+				{
+					"name": "GET ALL SALARY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/salary",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"salary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE SALARY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Tahun",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/salary",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"salary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE SALARY",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/salary/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"salary",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE COLOR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/salary/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"salary",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SEND MAIL",
+			"item": [
+				{
+					"name": "SEND EMAIL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "from",
+									"value": "testing@runlapan.com",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "itmamul2004@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "Hello World",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "Hello this is a testing email",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/sendmail",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sendmail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SERVICE",
+			"item": [
+				{
+					"name": "GET ALL SERVICE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/services?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"services"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE SERVICE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/OneDrive/Gambar/Screenshot/Screenshot 2023-06-22 152856.png"
+								},
+								{
+									"key": "title",
+									"value": "Outsourcing",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Sekolah kami berkomitmen menciptakan pendidikan Gratis untuk semua siswa dengan membebaskan biaya SPP dan Uang Gedung.",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/services",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE SERVICE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Music/hand.png"
+								},
+								{
+									"key": "title",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/services/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE SERVICE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/services/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/services/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SLIDER",
+			"item": [
+				{
+					"name": "GET ALL SLIDER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/slider?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"slider"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE SLIDER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Downloads/steptodown.com423697.jpg"
+								},
+								{
+									"key": "title",
+									"value": "Travel Agent",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Travelling bisa memberikan kesempatan untuk melepaskan diri dari rutinitas sehari - hari, mengurangi stress, dan merangsang kreativitas",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "http://localhost:3000",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/slider",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"slider"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE SLIDER",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/slider/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"slider",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE SLIDER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/slider/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"slider",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/slider/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"slider",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SOCIAL MEDIA",
+			"item": [
+				{
+					"name": "GET ALL SOCIAL MEDIA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/socialmedia?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"socialmedia"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE SOCIAL MEDIA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "picture",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/socialmedia",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"socialmedia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE SOCIAL MEDIA",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "facebook",
+									"value": "https://facebook.com",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "https://twitter.com",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "https://instagram.com",
+									"type": "text"
+								},
+								{
+									"key": "youtube",
+									"value": "https://youtube.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/socialmedia/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"socialmedia",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE SOCIAL MEDIA",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/socialmedia/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"socialmedia",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SUBMENU",
+			"item": [
+				{
+					"name": "GET ALL MENU",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/sub-menu",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sub-menu"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "6",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE MENU",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "menu",
+									"value": "Sub Home",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "http://localhost:3000/sub-home",
+									"type": "text"
+								},
+								{
+									"key": "target",
+									"value": "blank",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "menuId",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/sub-menu",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sub-menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE MENU",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "menu",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "target",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/sub-menu/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sub-menu",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE MENU",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/sub-menu/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sub-menu",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/sub-menu/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sub-menu",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TEAMS",
+			"item": [
+				{
+					"name": "GET ALL TEAMS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/team?page=&limit=&search=&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"team"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": ""
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE TEAMS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Music/graph.png"
+								},
+								{
+									"key": "name",
+									"value": "Itmamul Fahmi",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "Programmer",
+									"type": "text"
+								},
+								{
+									"key": "division_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/team",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE TEAMS",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/itmam/Music/hand.png"
+								},
+								{
+									"key": "name",
+									"value": "Hand",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "Programmer",
+									"type": "text"
+								},
+								{
+									"key": "division_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/team/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"team",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE TEAMS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/team/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"team",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE TEAMS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/team/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"team",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TESTIMONY",
+			"item": [
+				{
+					"name": "GET ALL TESTIMONY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/testimony?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"testimony"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE TESTIMONY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profilephoto",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "name",
+									"value": "Zanebic Verdi",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "This is a good application",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/testimony",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"testimony"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE TESTIMONY",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profilephoto",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "name",
+									"value": "Zanebic Verdi",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "This is a good application",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/testimony/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"testimony",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE TESTIMONY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/testimony/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"testimony",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/testimony/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"testimony",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER LOG",
+			"item": [
+				{
+					"name": "GET ALL USER LOG",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user-log?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user-log"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE USER LOG",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_role",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "crud_activities",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/user-log",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user-log"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USER LOG",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_role",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "crud_activites",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/user-log/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user-log",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE USER LOG",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user-log/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user-log",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user-log/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user-log",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VACANCY",
+			"item": [
+				{
+					"name": "GET ALL VACANCY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vacancy?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vacancy"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE VACANCY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile_photo",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nik",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "birth_place",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "birth_date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "gender_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "height",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "religion_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "education_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "school_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "start_work",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "end_work",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "skills",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "vaccine_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "first_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "second_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "line",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "identity_province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "identity_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "identity_sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "identity_postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "identity_full_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "domicile_province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "domicile_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "domicile_sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "domicile_postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "domicile_full_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "urgent_full_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "applicant_relationship",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "urgent_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_owner_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_account_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "describe_yourself",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "expected_salary",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "cv",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "id_card",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vacancy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vacancy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE VACANCY",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile_photo",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nik",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "full_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "birth_place",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "birth_date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "gender_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "height",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "religion_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "education_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "school_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "start_work",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "end_work",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "skills",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "vaccine_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "first_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "second_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "line",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "identity_province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "identity_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "identity_sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "identity_postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "identity_full_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "domicile_province",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "domicile_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "domicile_sub_district",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "domicile_postal_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "domicile_full_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "urgent_full_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "applicant_relationship",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "urgent_phone_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_owner_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_account_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "describe_yourself",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "expected_salary",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "cv",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "id_card",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vacancy/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vacancy",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE VACANCY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vacancy/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vacancy",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vacancy/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vacancy",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VACCINE",
+			"item": [
+				{
+					"name": "GET ALL VACCINE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vaccine?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vaccine"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE VACCINE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ketiga (III)",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vaccine",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vaccine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE VACCINE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vaccine/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vaccine",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE VACCINE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vaccine/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vaccine",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vaccine/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vaccine",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VEHICLE TYPE",
+			"item": [
+				{
+					"name": "GET ALL VEHICLE TYPE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vehicle-type?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vehicle-type"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE VEHICLE TYPE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Mobil",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vehicle-type",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vehicle-type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE VEHICLE TYPE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vehicle-type/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vehicle-type",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE VEHICLE TYPE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vehicle-type/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vehicle-type",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FIND ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vehicle-type/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vehicle-type",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VISITOR",
+			"item": [
+				{
+					"name": "GET VISITOR",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/visitor",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"visitor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VISITOR REPORT",
+			"item": [
+				{
+					"name": "GET VISITOR REPORT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/visitor-report",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"visitor-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE VISITOR REPORT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "location",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "ip_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "operating_systems",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "browser",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "device",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/visitor-report",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"visitor-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE VISITOR REPORT Copy",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "location",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "ip_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "operating_systems",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "browser",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "device",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/visitor-report",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"visitor-report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE VISITOR REPORT",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/visitor-report",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"visitor-report"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VISSION MISSION",
+			"item": [
+				{
+					"name": "GET VISSION MISSION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vission-mission",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vission-mission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE VISSION MISSION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "vission",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "mission",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vission-mission",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vission-mission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE VISSION MISSION",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "vission",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "mission",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vission-mission",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vission-mission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE VISION MISSION",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vision-mission",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vision-mission"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WORK EXPERIENCE",
+			"item": [
+				{
+					"name": "GET WORK EXPERIENCE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/workexperience",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workexperience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE WORK EXPERIENCE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ya",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/workexperience",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workexperience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE WORK EXPERIENCE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/workexperience",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workexperience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE WORK EXPERIENCE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/workexperience",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workexperience"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PROVINCE",
+			"item": [
+				{
+					"name": "GET PROVINCE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/province",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"province"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE PROVINCE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ya",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/province",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"province"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PROVINCE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/province/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"province",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PROVINCE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/province/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"province",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "REGENCY",
+			"item": [
+				{
+					"name": "GET REGENCY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/regency",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"regency"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE REGENCY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ya",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/regency",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"regency"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE REGENCY",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/regency/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"regency",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE REGENCY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/regency/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"regency",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VILLAGE",
+			"item": [
+				{
+					"name": "GET VILLAGE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/village",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"village"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE VILLAGE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ya",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/village",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"village"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE VILLAGE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/village/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"village",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE VILLAGE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/village/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"village",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DISTRICT",
+			"item": [
+				{
+					"name": "GET DISTRICT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/district",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"district"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE DISTRICT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ya",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/district",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"district"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DISTRICT",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/district",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"district"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DISTRICT",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/district",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"district"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WHATSAPP",
+			"item": [
+				{
+					"name": "GET ALL WHATSAPP",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/whatsapp?page&limit&search&sort&sortBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"whatsapp"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "sort",
+									"value": null
+								},
+								{
+									"key": "sortBy",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE WHATSAPP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/whatsapp/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"whatsapp",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE WHATSAPP",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/whatsapp/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"whatsapp",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE WHATSAPP",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/whatsapp/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"whatsapp",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
